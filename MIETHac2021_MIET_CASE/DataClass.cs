@@ -72,10 +72,9 @@ namespace MIETHac2021_MIET_CASE
                                 grid.ColumnDefinitions.Add(cw2);
                                 grid.ColumnDefinitions.Add(cw3);
                                 TextBox l = new();
-                                l.FontWeight = FontWeights.Bold;
                                 l.Text = el.Description;
                                 l.BorderBrush = Brushes.Black;
-                                l.BorderThickness = new(2);
+                                l.BorderThickness = new(1);
                                 l.SetValue(Grid.ColumnProperty, 0);
                                 l.IsReadOnly = true;
                                 l.TextWrapping = TextWrapping.Wrap;
@@ -134,10 +133,9 @@ namespace MIETHac2021_MIET_CASE
                                 grid.ColumnDefinitions.Add(cw3);
                                 grid.ColumnDefinitions.Add(cw4);
                                 TextBox l = new();
-                                l.FontWeight = FontWeights.Bold;
                                 l.Text = el.Description;
                                 l.BorderBrush = Brushes.Black;
-                                l.BorderThickness = new(2);
+                                l.BorderThickness = new(1);
                                 l.SetValue(Grid.ColumnProperty, 0);
                                 l.IsReadOnly = true;
                                 l.TextWrapping = TextWrapping.Wrap;

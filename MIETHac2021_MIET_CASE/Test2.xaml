@@ -32,7 +32,7 @@
                             <Grid Grid.Row="0" Grid.Column="0" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
@@ -43,35 +43,35 @@
                             <Grid Grid.Row="0" Grid.Column="1" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
                                     </Border.BorderBrush>
                                 </Border>
-                                <Label HorizontalAlignment="Center" Content="Почти никогда"/>
+                                <Label HorizontalAlignment="Center" FontWeight="DemiBold" Content="Почти никогда"/>
                             </Grid>
                             <Grid Grid.Row="0" Grid.Column="2" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
                                     </Border.BorderBrush>
                                 </Border>
-                                <Label HorizontalAlignment="Center" Content="Иногда"/>
+                                <Label HorizontalAlignment="Center" FontWeight="DemiBold" Content="Иногда"/>
                             </Grid>
                             <Grid Grid.Row="0" Grid.Column="3" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
                                     </Border.BorderBrush>
                                 </Border>
-                                <Label HorizontalAlignment="Center" Content="Довольно часто"/>
+                                <Label HorizontalAlignment="Center" FontWeight="DemiBold" Content="Довольно часто"/>
                             </Grid>
                         </Grid>
                     </StackPanel>

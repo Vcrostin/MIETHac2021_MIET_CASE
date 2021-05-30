@@ -29,7 +29,6 @@ namespace MIETHac2021_MIET_CASE
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            mw.Show();
         }
 
         private void Grid_SizeChanged(object sender, SizeChangedEventArgs e)

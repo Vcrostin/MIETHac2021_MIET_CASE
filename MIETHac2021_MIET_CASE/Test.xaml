@@ -31,7 +31,7 @@
                             <Grid Grid.Row="0" Grid.Column="0" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
@@ -42,24 +42,24 @@
                             <Grid Grid.Row="0" Grid.Column="1" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
                                     </Border.BorderBrush>
                                 </Border>
-                                <Label HorizontalAlignment="Center" Content="Скорее да"/>
+                                <Label HorizontalAlignment="Center" FontWeight="DemiBold" Content="Скорее да"/>
                             </Grid>
                             <Grid Grid.Row="0" Grid.Column="2" MaxHeight="50">
                                 <Border>
                                     <Border.BorderThickness>
-                                        3
+                                        2
                                     </Border.BorderThickness>
                                     <Border.BorderBrush>
                                         black
                                     </Border.BorderBrush>
                                 </Border>
-                                <Label HorizontalAlignment="Center" Content="Скорее нет"/>
+                                <Label HorizontalAlignment="Center" FontWeight="DemiBold" Content="Скорее нет"/>
                             </Grid>
                         </Grid>
                     </StackPanel>
