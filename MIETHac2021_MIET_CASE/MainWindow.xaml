@@ -1,0 +1,85 @@
+﻿<Window x:Class="MIETHac2021_MIET_CASE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIETHac2021_MIET_CASE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" MinHeight="540" MinWidth="700" Icon="/1486504823-culture-cube-lab-accessories-lab-experiment-laboratory-sample-tube-test-tube_81343.ico">
+    <Grid SizeChanged="Grid_SizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="30"/>
+            <ColumnDefinition Width="6*" MinWidth="200"/>
+            <ColumnDefinition Width="2*" MinWidth="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="30"/>
+            <RowDefinition MinHeight="180" Height="6*"/>
+            <RowDefinition MinHeight="30" Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Source="/Fignay.png"/>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="2*" MinHeight="30"/>
+            </Grid.RowDefinitions>
+            <DockPanel LastChildFill="True" Grid.Column="0" Grid.Row="1">
+                <Button DockPanel.Dock="Left" HorizontalAlignment="left" Click="Button_Click">Выбрать файл</Button>
+                <Label x:Name="fileName" BorderBrush="DarkBlue" BorderThickness="2" DockPanel.Dock="Right" HorizontalAlignment="Right" Content="null"/>
+                <Label HorizontalAlignment="Right" Content="Выбранный файл:"/>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+                <TextBlock x:Name="TextBlockMainText" TextWrapping="Wrap" TextAlignment="Center" FontSize="13" FontFamily="Century Gothic" FontStyle="Italic" MinWidth="300">
+                    <Run Text=
+"Данный экспресс-опросник призван помочь вам адекватно и быстро оценить показатели вашего эмоционального состояния и удовлетворенности условиям, 
+в которых находится ваша психика, а также проверить степень понимания себя. Эти показатели влияют на работоспособность, отношения с другими и, в целом, 
+на субъективное представление об окружающей реальности."
+                         />
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run  Text=
+"Адекватность полученного результата зависит от того, насколько честно и внимательно вы отнеслись к вопросам. Адекватная оценка своего состояния, 
+в свою очередь, является адекватной точкой отсчета для психологической работы над собой в верном направлении, в случае вашей заинтересованности в состоянии 
+собственной психики."
+                          />
+                    <LineBreak/>
+                </TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" >
+                    <Label Name="FIOl" Content="ФИО"/>
+                    <TextBox Name="FIO" HorizontalContentAlignment="Stretch"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" >
+                    <Label Name="GroupL" Content="Учебная группа"/>
+                    <TextBox Name="Group" HorizontalContentAlignment="Stretch"/>
+                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="AgreedRB" GroupName="IsAgreed" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"  Content="Я согласен пройти тестирование"/>
+                    <RadioButton GroupName="IsAgreed" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"  Content="Я не согласен"/>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Grid.Row="0" Content="Начать" Click="OnStartClick"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

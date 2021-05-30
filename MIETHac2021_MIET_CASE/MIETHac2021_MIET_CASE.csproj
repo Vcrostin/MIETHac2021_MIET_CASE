@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1486504823-culture-cube-lab-accessories-lab-experiment-laboratory-sample-tube-test-tube_81343.ico" />
+    <None Remove="Fignay.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1486504823-culture-cube-lab-accessories-lab-experiment-laboratory-sample-tube-test-tube_81343.ico" />
+    <Resource Include="Fignay.png" />
+  </ItemGroup>
+
+</Project>
